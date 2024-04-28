@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finland Facts</title>
+  <style>
+    /* Style the button, container, etc. */
+  </style>
+</head>
+<body>
+  <h1>Did you know?</h1>
+  <div id="fact-area"></div>
+  <button onclick="showFact()">Learn a Fact</button>
+
+  <script>
+    const facts = [
+      "Finland is known as the 'Land of a Thousand Lakes'", 
+      "Finland is home to Santa Claus Village",
+      "Sauna is an integral part of Finnish culture",
+      "Finland consistently ranks high in global happiness reports",
+      "The Finnish language is unique and unrelated to most European languages"
+      // Add more facts!
+    ];
+
+    function showFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById('fact-area').textContent = facts[randomIndex];
+    }
+  </script>
+</body>
+</html>
